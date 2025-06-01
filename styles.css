@@ -500,6 +500,35 @@ section {
   font-weight: bold;
 }
 
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.8);
+}
+.modal-content {
+  display: block;
+  margin: 60px auto;
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .home,
